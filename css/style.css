@@ -1,0 +1,207 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 37px;
+}
+
+.container {
+	max-width: 1219px;
+	padding: 0 55px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #007765;
+}
+
+header .container {
+	padding-top: 20px;
+	padding-bottom: 19px;
+}
+
+header img {
+	width: 184px;
+	vertical-align: middle;
+}
+
+nav {
+	float: right;
+}
+
+nav a {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+	color: #FFF;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	line-height: 45px;
+}
+
+main {
+	margin-top: 84px;
+}
+
+.jumbotron {
+	background: url("../img/image.png") center center no-repeat;
+	background-size: cover;
+}
+
+.jumbotron .container {
+	padding-top: 160px;
+	padding-bottom: 160px;
+}
+
+h1, h2 {
+	font-weight: 500;
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	font-size: 72px;
+	color: #FFF;
+	line-height: 83px;
+}
+
+.the-problem,
+.the-team {
+	background-color: #EEE;
+}
+
+.the-problem .container,
+.ppc .container {
+	padding-top: 48px;
+	padding-bottom: 92px;
+}
+
+h2 {
+	font-size: 64px;
+	color: #007765;
+	line-height: 75px;
+	margin-bottom: 16px;
+}
+
+p {
+	margin: 40px 0;
+}
+
+h2 + p,
+.ppc img + p {
+	margin-top: 0;
+}
+
+.the-problem p:last-child,
+.ppc p:last-child {
+	margin-bottom: 0;
+}
+
+.hero {
+	background: url("../img/hero.png") center center no-repeat;
+	background-size: cover;
+}
+
+.hero-message {
+	font-size: 48px;
+	font-weight: 500;
+	font-style: italic;
+	line-height: 56px;
+	color: #FFF;
+	text-align: center;
+	padding: 128px 0 127px;
+}
+
+.ppc {
+	background-color: #FFF;
+}
+
+.ppc img {
+	width: 115px;
+	float: left;
+	margin-right: 48px;
+}
+
+.the-team .container {
+	padding-top: 48px;
+	padding-bottom: 94px;
+	text-align: center;
+}
+
+.the-team h2 {
+	margin-bottom: 32px;
+}
+
+.card img {
+	width: 168px;
+	margin-bottom: 12px;
+}
+
+.name {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	color: #007765;
+}
+
+.position {
+	font-size: 18px;
+	line-height: 22px;
+	font-style: italic;
+}
+
+.card {
+	display: inline-block;
+	padding: 24px 0 28px;
+	width: 350px;
+	margin-bottom: 30px;
+}
+
+.card:nth-of-type(3n + 1){
+	float: left;
+}
+
+.card:nth-of-type(3n + 3){
+	float: right;
+}
+
+.card:nth-of-type(n + 4) {
+	margin-bottom: 0;
+}
+
+footer {
+	background-color: #333;
+}
+
+.copy {
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFF;
+	text-align: center;
+	padding: 48px 0 64px;
+}
+
+/* Стиль для корректировки прокрутки
+при переходе по якорным ссылкам */
+.the-problem,
+.ppc,
+.the-team,
+.jumbotron {
+	padding-top: 80px;
+    margin-top: -80px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
